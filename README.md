@@ -7,7 +7,7 @@ Enterprise-level hotel booking simulation app built with Angular, Spring Boot, S
 📦 hotel.com – Microservices Overview
 This project follows a microservices architecture where each service is independently deployable, scalable, and responsible for a specific business capability. All services communicate via REST APIs and are orchestrated through Spring Cloud Gateway and Eureka Discovery.
 
-### 🔐 1. auth-service: 
+### 🔐 1. auth-service: [hotel-auth-service]
 Purpose: Handles authentication and user management.
 #### Responsibilities:
   1) User registration and login
@@ -19,7 +19,7 @@ Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Security, JWT, Spring Data JPA
 
 
-### 🏨 2. hotel-service
+### 🏨 2. hotel-service: [hotel-hotel-service]
 Purpose: Manages hotels and room inventory.
 #### Responsibilities:
   1) CRUD operations for hotels and rooms
@@ -30,7 +30,7 @@ Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Data JPA, Hibernate
 
 
-### 📆 3. booking-service
+### 📆 3. booking-service: [hotel-booking-service]
 Purpose: Handles room reservations and booking logic.
 #### Responsibilities:
   1) Book, cancel, and modify reservations
@@ -41,7 +41,7 @@ Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Data JPA, REST
 
 
-### 👤 4. user-profile-service
+### 👤 4. user-profile-service: [hotel-user-profile-service]
 Purpose: Manages user-specific preferences and history.
 #### Responsibilities:
   1) Store user preferences like favorite hotels, cities, filters
@@ -50,7 +50,7 @@ Purpose: Manages user-specific preferences and history.
 Database: MongoDB
 Tech Stack: Spring Boot, Spring Data MongoDB
 
-### 📣 5. notification-service
+### 📣 5. notification-service: [hotel-notification-service]
 Purpose: Sends notifications related to bookings and alerts.
 #### Responsibilities:
   1) Send booking confirmation emails
@@ -61,7 +61,7 @@ Database: MongoDB
 Tech Stack: Spring Boot, Spring Scheduler, Spring Mail, RabbitMQ/Kafka-ready
 
 
-### 🌐 6. gateway-service
+### 🌐 6. gateway-service: [hotel-gateway-service]
 Purpose: Acts as a single entry point for all microservices.
 #### Responsibilities:
   1) Route incoming HTTP requests to appropriate microservices
@@ -72,7 +72,7 @@ Database: None
 Tech Stack: Spring Cloud Gateway
 
 
-### 📡 7. discovery-server
+### 📡 7. discovery-server: [hotel-discovery-server]
 Purpose: Service discovery and registry using Eureka.
 #### Responsibilities:
   1) Register all microservices
@@ -82,7 +82,7 @@ Database: None
 Tech Stack: Spring Cloud Netflix Eureka
 
 
-### ⚙️ 8. config-server
+### ⚙️ 8. config-server: [hotel-config-server]
 Purpose: Centralized configuration for all services.
 #### Responsibilities:
   1) Load all application.yml configs from a Git repository
@@ -90,6 +90,14 @@ Purpose: Centralized configuration for all services.
   3) Allow runtime updates and refresh scopes
 Database: None
 Tech Stack: Spring Cloud Config Server
+
+### 9. frontend: [hotel-frontend]
+purpose: FrontEnd UI of RishiHotel
+#### Responsibilities:
+  1) main UI of the hotel
+  2) UI includes all components of the hotel
+Database: None
+Tech Stack: Angular, TypeScript, HTML, CSS
 
 ### 🧠 Why Microservices?
 Modularity: Each service focuses on a single business capability
