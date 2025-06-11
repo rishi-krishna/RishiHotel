@@ -8,7 +8,7 @@ Enterprise-level hotel booking simulation app built with Angular, Spring Boot, S
 📦 hotel.com – Microservices Overview
 This project follows a microservices architecture where each service is independently deployable, scalable, and responsible for a specific business capability. All services communicate via REST APIs and are orchestrated through Spring Cloud Gateway and Eureka Discovery.
 
-🔐 1. auth-service: 
+# 🔐 1. auth-service: 
 Purpose: Handles authentication and user management.
 Responsibilities:
 User registration and login
