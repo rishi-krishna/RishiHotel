@@ -11,11 +11,11 @@ This project follows a microservices architecture where each service is independ
 ### 🔐 1. auth-service: 
 Purpose: Handles authentication and user management.
 Responsibilities:
-User registration and login
-JWT token generation and validation
-Role-based access control (Guest, Admin, Hotel Staff)
-Token blacklist for logout
-Password encryption (BCrypt)
+  1) User registration and login
+  2) JWT token generation and validation
+  3) Role-based access control (Guest, Admin, Hotel Staff)
+  4) Token blacklist for logout
+  5) Password encryption (BCrypt)
 Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Security, JWT, Spring Data JPA
 
