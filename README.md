@@ -10,7 +10,7 @@ This project follows a microservices architecture where each service is independ
 
 ### 🔐 1. auth-service: 
 Purpose: Handles authentication and user management.
-Responsibilities:
+#### Responsibilities:
   1) User registration and login
   2) JWT token generation and validation
   3) Role-based access control (Guest, Admin, Hotel Staff)
