@@ -22,73 +22,73 @@ Tech Stack: Spring Boot, Spring Security, JWT, Spring Data JPA
 
 ### 🏨 2. hotel-service
 Purpose: Manages hotels and room inventory.
-Responsibilities:
-CRUD operations for hotels and rooms
-Store room types, amenities, prices
-Admin-only endpoints for managing listings
-Expose room availability for booking-service
+#### Responsibilities:
+  1) CRUD operations for hotels and rooms
+  2) Store room types, amenities, prices
+  3) Admin-only endpoints for managing listings
+  4) Expose room availability for booking-service
 Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Data JPA, Hibernate
 
 
 ### 📆 3. booking-service
 Purpose: Handles room reservations and booking logic.
-Responsibilities:
-Book, cancel, and modify reservations
-Check room availability before booking
-Enforce booking rules (date validation, conflict resolution)
-Store historical bookings
+#### Responsibilities:
+  1) Book, cancel, and modify reservations
+  2) Check room availability before booking
+  3) Enforce booking rules (date validation, conflict resolution)
+  4) Store historical bookings
 Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Data JPA, REST
 
 
 ### 👤 4. user-profile-service
 Purpose: Manages user-specific preferences and history.
-Responsibilities:
-Store user preferences like favorite hotels, cities, filters
-Save user search history
-Show personalized recommendations
+#### Responsibilities:
+  1) Store user preferences like favorite hotels, cities, filters
+  2) Save user search history
+  3) Show personalized recommendations
 Database: MongoDB
 Tech Stack: Spring Boot, Spring Data MongoDB
 
 ### 📣 5. notification-service
 Purpose: Sends notifications related to bookings and alerts.
-Responsibilities:
-Send booking confirmation emails
-Send check-in reminders
-Send promotional or system alerts (optional SMS/email)
-Retry failed notifications
+#### Responsibilities:
+  1) Send booking confirmation emails
+  2) Send check-in reminders
+  3) Send promotional or system alerts (optional SMS/email)
+  4) Retry failed notifications
 Database: MongoDB
 Tech Stack: Spring Boot, Spring Scheduler, Spring Mail, RabbitMQ/Kafka-ready
 
 
 ### 🌐 6. gateway-service
 Purpose: Acts as a single entry point for all microservices.
-Responsibilities:
-Route incoming HTTP requests to appropriate microservices
-Handle CORS, security headers, and rate limiting
-Optionally authenticate tokens at gateway level
-Provide failover and retry logic
+#### Responsibilities:
+  1) Route incoming HTTP requests to appropriate microservices
+  2) Handle CORS, security headers, and rate limiting
+  3) Optionally authenticate tokens at gateway level
+  4) Provide failover and retry logic
 Database: None
 Tech Stack: Spring Cloud Gateway
 
 
 ### 📡 7. discovery-server
 Purpose: Service discovery and registry using Eureka.
-Responsibilities:
-Register all microservices
-Maintain availability map of services
-Allow dynamic load-balanced routing between services
+#### Responsibilities:
+  1) Register all microservices
+  2) Maintain availability map of services
+  3) Allow dynamic load-balanced routing between services
 Database: None
 Tech Stack: Spring Cloud Netflix Eureka
 
 
 ### ⚙️ 8. config-server
 Purpose: Centralized configuration for all services.
-Responsibilities:
-Load all application.yml configs from a Git repository
-Provide configuration to services at runtime
-Allow runtime updates and refresh scopes
+#### Responsibilities:
+  1) Load all application.yml configs from a Git repository
+  2) Provide configuration to services at runtime
+  3) Allow runtime updates and refresh scopes
 Database: None
 Tech Stack: Spring Cloud Config Server
 
