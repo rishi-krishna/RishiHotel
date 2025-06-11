@@ -91,7 +91,7 @@ Purpose: Centralized configuration for all services.
 Database: None
 Tech Stack: Spring Cloud Config Server
 
-### 9. frontEnd: [hotel-frontend]
+### 9. frontend: [hotel-frontend]
 purpose: FrontEnd UI of RishiHotel
 #### Responsibilities:
   1) main UI of the hotel
