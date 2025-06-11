@@ -20,7 +20,7 @@ Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Security, JWT, Spring Data JPA
 
 
-🏨 2. hotel-service
+### 🏨 2. hotel-service
 Purpose: Manages hotels and room inventory.
 Responsibilities:
 CRUD operations for hotels and rooms
@@ -31,7 +31,7 @@ Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Data JPA, Hibernate
 
 
-📆 3. booking-service
+### 📆 3. booking-service
 Purpose: Handles room reservations and booking logic.
 Responsibilities:
 Book, cancel, and modify reservations
@@ -42,7 +42,7 @@ Database: PostgreSQL
 Tech Stack: Spring Boot, Spring Data JPA, REST
 
 
-👤 4. user-profile-service
+### 👤 4. user-profile-service
 Purpose: Manages user-specific preferences and history.
 Responsibilities:
 Store user preferences like favorite hotels, cities, filters
@@ -51,7 +51,7 @@ Show personalized recommendations
 Database: MongoDB
 Tech Stack: Spring Boot, Spring Data MongoDB
 
-📣 5. notification-service
+### 📣 5. notification-service
 Purpose: Sends notifications related to bookings and alerts.
 Responsibilities:
 Send booking confirmation emails
@@ -62,7 +62,7 @@ Database: MongoDB
 Tech Stack: Spring Boot, Spring Scheduler, Spring Mail, RabbitMQ/Kafka-ready
 
 
-🌐 6. gateway-service
+### 🌐 6. gateway-service
 Purpose: Acts as a single entry point for all microservices.
 Responsibilities:
 Route incoming HTTP requests to appropriate microservices
@@ -73,7 +73,7 @@ Database: None
 Tech Stack: Spring Cloud Gateway
 
 
-📡 7. discovery-server
+### 📡 7. discovery-server
 Purpose: Service discovery and registry using Eureka.
 Responsibilities:
 Register all microservices
@@ -83,7 +83,7 @@ Database: None
 Tech Stack: Spring Cloud Netflix Eureka
 
 
-⚙️ 8. config-server
+### ⚙️ 8. config-server
 Purpose: Centralized configuration for all services.
 Responsibilities:
 Load all application.yml configs from a Git repository
@@ -92,7 +92,7 @@ Allow runtime updates and refresh scopes
 Database: None
 Tech Stack: Spring Cloud Config Server
 
-🧠 Why Microservices?
+### 🧠 Why Microservices?
 Modularity: Each service focuses on a single business capability
 Scalability: Services like booking or auth can scale independently
 Resilience: One failing service won’t bring down the whole app
