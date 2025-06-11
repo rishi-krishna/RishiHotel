@@ -97,7 +97,7 @@ purpose: FrontEnd UI of RishiHotel
   1) main UI of the hotel
   2) UI includes all components of the hotel
 Database: None
-Tech Stack: Angular, typescript, HTML, CSS
+Tech Stack: Angular, TypeScript, HTML, CSS
 
 ### 🧠 Why Microservices?
 Modularity: Each service focuses on a single business capability
